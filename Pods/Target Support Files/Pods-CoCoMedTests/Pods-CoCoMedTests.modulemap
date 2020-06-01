@@ -1,0 +1,6 @@
+framework module Pods_CoCoMedTests {
+  umbrella header "Pods-CoCoMedTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

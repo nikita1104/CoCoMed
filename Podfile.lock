@@ -1,0 +1,20 @@
+PODS:
+  - ReachabilitySwift (5.0.0)
+  - SideMenuSwift (2.0.5)
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - SideMenuSwift
+
+SPEC REPOS:
+  trunk:
+    - ReachabilitySwift
+    - SideMenuSwift
+
+SPEC CHECKSUMS:
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SideMenuSwift: c7d99c270e0fad922a14b81f1dcc7a84c764bcd5
+
+PODFILE CHECKSUM: f297483ef1cb0ab1441831f3e55046226b897064
+
+COCOAPODS: 1.9.0

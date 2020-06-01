@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11CC8F7B68E06D7D74DEE048 /* Pods_CoCoMed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80AD1FBF1AF7B0673C3EB24 /* Pods_CoCoMed.framework */; };
+		340EE445EBC517958AA5F7DB /* Pods_CoCoMed_CoCoMedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1628342AB10A46FCDB6C45 /* Pods_CoCoMed_CoCoMedUITests.framework */; };
+		4DD98ABCDEDD9295123FDFD6 /* Pods_CoCoMedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AC1EE70FE5BE3187AB6BD0 /* Pods_CoCoMedTests.framework */; };
+		6C06AEE424758E70001F910D /* SideMenuContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06AEE324758E70001F910D /* SideMenuContainerVC.swift */; };
+		6C06AEE624759012001F910D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06AEE524759012001F910D /* HomeVC.swift */; };
+		6C5DFF662476656400C40148 /* SymptomCheckTermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5DFF652476656400C40148 /* SymptomCheckTermsVC.swift */; };
+		6C5DFF6824766ADE00C40148 /* SymptomCheckerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5DFF6724766ADE00C40148 /* SymptomCheckerVC.swift */; };
+		6C85A1402484E36E003D433C /* ENManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85A13F2484E36E003D433C /* ENManager.swift */; };
+		6C85A1422484ED29003D433C /* GridUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85A1412484ED29003D433C /* GridUtil.swift */; };
+		6C85A1442484FFFB003D433C /* BackgroundLocationMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85A1432484FFFB003D433C /* BackgroundLocationMananger.swift */; };
+		6C9436202484B1FC006263DD /* GrantPermissionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C94361F2484B1FC006263DD /* GrantPermissionsVC.swift */; };
+		6C9436222484B87B006263DD /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9436212484B87B006263DD /* ReachabilityManager.swift */; };
+		6C99B67F24727A65000E3E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B67E24727A65000E3E84 /* AppDelegate.swift */; };
+		6C99B68624727A65000E3E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C99B68424727A65000E3E84 /* Main.storyboard */; };
+		6C99B68924727A65000E3E84 /* CoCoMed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B68724727A65000E3E84 /* CoCoMed.xcdatamodeld */; };
+		6C99B68B24727A68000E3E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C99B68A24727A68000E3E84 /* Assets.xcassets */; };
+		6C99B68E24727A68000E3E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C99B68C24727A68000E3E84 /* LaunchScreen.storyboard */; };
+		6C99B69924727A68000E3E84 /* CoCoMedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B69824727A68000E3E84 /* CoCoMedTests.swift */; };
+		6C99B6A424727A68000E3E84 /* CoCoMedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6A324727A68000E3E84 /* CoCoMedUITests.swift */; };
+		6C99B6BB24727DE5000E3E84 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6BA24727DE5000E3E84 /* NetworkManager.swift */; };
+		6C99B6BD24727E69000E3E84 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6BC24727E69000E3E84 /* Commons.swift */; };
+		6C99B6BF24727EE2000E3E84 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6BE24727EE2000E3E84 /* RequestProtocol.swift */; };
+		6C99B6C124727F06000E3E84 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6C024727F06000E3E84 /* Request.swift */; };
+		6C99B6C324727F2F000E3E84 /* DispatcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6C224727F2F000E3E84 /* DispatcherProtocol.swift */; };
+		6C99B6C524727F83000E3E84 /* EnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6C424727F83000E3E84 /* EnvironmentConfig.swift */; };
+		6C99B6C724727FF3000E3E84 /* EnvironmentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6C624727FF3000E3E84 /* EnvironmentProtocol.swift */; };
+		6C99B6C924728026000E3E84 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6C824728026000E3E84 /* WebViewManager.swift */; };
+		6C99B6CB2472804B000E3E84 /* WebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6CA2472804B000E3E84 /* WebRequest.swift */; };
+		6C99B6CD24728074000E3E84 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6CC24728074000E3E84 /* GIF.swift */; };
+		6C99B6CF24728328000E3E84 /* OnBoardings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6CE24728328000E3E84 /* OnBoardings.swift */; };
+		6C99B6D22472898D000E3E84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99B6D12472898D000E3E84 /* Constants.swift */; };
+		6CCE20642472ABCF002AD443 /* OnBoardingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE20632472ABCF002AD443 /* OnBoardingViewCell.xib */; };
+		6CCE20662472AC9D002AD443 /* OnBoardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE20652472AC9D002AD443 /* OnBoardingViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C99B69524727A68000E3E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C99B67324727A65000E3E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C99B67A24727A65000E3E84;
+			remoteInfo = CoCoMed;
+		};
+		6C99B6A024727A68000E3E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C99B67324727A65000E3E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C99B67A24727A65000E3E84;
+			remoteInfo = CoCoMed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04877EAF9FDC1DD6D5340A30 /* Pods-CoCoMedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoMedTests.release.xcconfig"; path = "Target Support Files/Pods-CoCoMedTests/Pods-CoCoMedTests.release.xcconfig"; sourceTree = "<group>"; };
+		2004441D0BFF10BF0A54BA74 /* Pods-CoCoMed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoMed.debug.xcconfig"; path = "Target Support Files/Pods-CoCoMed/Pods-CoCoMed.debug.xcconfig"; sourceTree = "<group>"; };
+		25AC1EE70FE5BE3187AB6BD0 /* Pods_CoCoMedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoCoMedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2708798FB650257250140324 /* Pods-CoCoMedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoMedTests.debug.xcconfig"; path = "Target Support Files/Pods-CoCoMedTests/Pods-CoCoMedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F4B4A207C7AE1669BCE834B /* Pods-CoCoMed-CoCoMedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoMed-CoCoMedUITests.debug.xcconfig"; path = "Target Support Files/Pods-CoCoMed-CoCoMedUITests/Pods-CoCoMed-CoCoMedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C06AEE324758E70001F910D /* SideMenuContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContainerVC.swift; sourceTree = "<group>"; };
+		6C06AEE524759012001F910D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		6C5DFF652476656400C40148 /* SymptomCheckTermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomCheckTermsVC.swift; sourceTree = "<group>"; };
+		6C5DFF6724766ADE00C40148 /* SymptomCheckerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomCheckerVC.swift; sourceTree = "<group>"; };
+		6C85A13F2484E36E003D433C /* ENManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENManager.swift; sourceTree = "<group>"; };
+		6C85A1412484ED29003D433C /* GridUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUtil.swift; sourceTree = "<group>"; };
+		6C85A1432484FFFB003D433C /* BackgroundLocationMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLocationMananger.swift; sourceTree = "<group>"; };
+		6C94361F2484B1FC006263DD /* GrantPermissionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrantPermissionsVC.swift; sourceTree = "<group>"; };
+		6C9436212484B87B006263DD /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		6C99B67B24727A65000E3E84 /* CoCoMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoCoMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C99B67E24727A65000E3E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C99B68524727A65000E3E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C99B68824727A65000E3E84 /* CoCoMed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoCoMed.xcdatamodel; sourceTree = "<group>"; };
+		6C99B68A24727A68000E3E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C99B68D24727A68000E3E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C99B68F24727A68000E3E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C99B69424727A68000E3E84 /* CoCoMedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoCoMedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C99B69824727A68000E3E84 /* CoCoMedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoCoMedTests.swift; sourceTree = "<group>"; };
+		6C99B69A24727A68000E3E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C99B69F24727A68000E3E84 /* CoCoMedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoCoMedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C99B6A324727A68000E3E84 /* CoCoMedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoCoMedUITests.swift; sourceTree = "<group>"; };
+		6C99B6A524727A68000E3E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C99B6BA24727DE5000E3E84 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6C99B6BC24727E69000E3E84 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		6C99B6BE24727EE2000E3E84 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		6C99B6C024727F06000E3E84 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6C99B6C224727F2F000E3E84 /* DispatcherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatcherProtocol.swift; sourceTree = "<group>"; };
+		6C99B6C424727F83000E3E84 /* EnvironmentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfig.swift; sourceTree = "<group>"; };
+		6C99B6C624727FF3000E3E84 /* EnvironmentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentProtocol.swift; sourceTree = "<group>"; };
+		6C99B6C824728026000E3E84 /* WebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
+		6C99B6CA2472804B000E3E84 /* WebRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequest.swift; sourceTree = "<group>"; };
+		6C99B6CC24728074000E3E84 /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		6C99B6CE24728328000E3E84 /* OnBoardings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardings.swift; sourceTree = "<group>"; };
+		6C99B6D12472898D000E3E84 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6CCE20632472ABCF002AD443 /* OnBoardingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewCell.xib; sourceTree = "<group>"; };
+		6CCE20652472AC9D002AD443 /* OnBoardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewCell.swift; sourceTree = "<group>"; };
+		9E1628342AB10A46FCDB6C45 /* Pods_CoCoMed_CoCoMedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoCoMed_CoCoMedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B330473D5841C202C7466EA3 /* Pods-CoCoMed-CoCoMedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoMed-CoCoMedUITests.release.xcconfig"; path = "Target Support Files/Pods-CoCoMed-CoCoMedUITests/Pods-CoCoMed-CoCoMedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E80AD1FBF1AF7B0673C3EB24 /* Pods_CoCoMed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoCoMed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA92E4FE572E6406CF55CAC /* Pods-CoCoMed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoCoMed.release.xcconfig"; path = "Target Support Files/Pods-CoCoMed/Pods-CoCoMed.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C99B67824727A65000E3E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CC8F7B68E06D7D74DEE048 /* Pods_CoCoMed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C99B69124727A68000E3E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD98ABCDEDD9295123FDFD6 /* Pods_CoCoMedTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C99B69C24727A68000E3E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340EE445EBC517958AA5F7DB /* Pods_CoCoMed_CoCoMedUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		416F38CB3A2133030C80CB1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2004441D0BFF10BF0A54BA74 /* Pods-CoCoMed.debug.xcconfig */,
+				FCA92E4FE572E6406CF55CAC /* Pods-CoCoMed.release.xcconfig */,
+				2F4B4A207C7AE1669BCE834B /* Pods-CoCoMed-CoCoMedUITests.debug.xcconfig */,
+				B330473D5841C202C7466EA3 /* Pods-CoCoMed-CoCoMedUITests.release.xcconfig */,
+				2708798FB650257250140324 /* Pods-CoCoMedTests.debug.xcconfig */,
+				04877EAF9FDC1DD6D5340A30 /* Pods-CoCoMedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C99B67224727A65000E3E84 = {
+			isa = PBXGroup;
+			children = (
+				6C99B67D24727A65000E3E84 /* CoCoMed */,
+				6C99B69724727A68000E3E84 /* CoCoMedTests */,
+				6C99B6A224727A68000E3E84 /* CoCoMedUITests */,
+				6C99B67C24727A65000E3E84 /* Products */,
+				416F38CB3A2133030C80CB1B /* Pods */,
+				A2EB6BDA627B66076CD53602 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C99B67C24727A65000E3E84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B67B24727A65000E3E84 /* CoCoMed.app */,
+				6C99B69424727A68000E3E84 /* CoCoMedTests.xctest */,
+				6C99B69F24727A68000E3E84 /* CoCoMedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C99B67D24727A65000E3E84 /* CoCoMed */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B6B124727B8D000E3E84 /* App Delegate */,
+				6C99B6B224727BBD000E3E84 /* Core Data Model */,
+				6C99B68F24727A68000E3E84 /* Info.plist */,
+				6C99B6B924727DB3000E3E84 /* API */,
+				6C99B6D024728968000E3E84 /* Model */,
+				6C99B6B824727CD5000E3E84 /* Controller */,
+				6CCE20622472AB8F002AD443 /* XIB */,
+				6C99B6B424727C55000E3E84 /* StoryBoards */,
+				6C99B6B724727C97000E3E84 /* AssetsUsed */,
+			);
+			path = CoCoMed;
+			sourceTree = "<group>";
+		};
+		6C99B69724727A68000E3E84 /* CoCoMedTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B69824727A68000E3E84 /* CoCoMedTests.swift */,
+				6C99B69A24727A68000E3E84 /* Info.plist */,
+			);
+			path = CoCoMedTests;
+			sourceTree = "<group>";
+		};
+		6C99B6A224727A68000E3E84 /* CoCoMedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B6A324727A68000E3E84 /* CoCoMedUITests.swift */,
+				6C99B6A524727A68000E3E84 /* Info.plist */,
+			);
+			path = CoCoMedUITests;
+			sourceTree = "<group>";
+		};
+		6C99B6B124727B8D000E3E84 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B67E24727A65000E3E84 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		6C99B6B224727BBD000E3E84 /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B68724727A65000E3E84 /* CoCoMed.xcdatamodeld */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		6C99B6B424727C55000E3E84 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B68C24727A68000E3E84 /* LaunchScreen.storyboard */,
+				6C99B68424727A65000E3E84 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		6C99B6B724727C97000E3E84 /* AssetsUsed */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B68A24727A68000E3E84 /* Assets.xcassets */,
+			);
+			path = AssetsUsed;
+			sourceTree = "<group>";
+		};
+		6C99B6B824727CD5000E3E84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B6CE24728328000E3E84 /* OnBoardings.swift */,
+				6C94361F2484B1FC006263DD /* GrantPermissionsVC.swift */,
+				6C06AEE324758E70001F910D /* SideMenuContainerVC.swift */,
+				6C06AEE524759012001F910D /* HomeVC.swift */,
+				6C85A1432484FFFB003D433C /* BackgroundLocationMananger.swift */,
+				6C5DFF652476656400C40148 /* SymptomCheckTermsVC.swift */,
+				6C5DFF6724766ADE00C40148 /* SymptomCheckerVC.swift */,
+				6C9436212484B87B006263DD /* ReachabilityManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C99B6B924727DB3000E3E84 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B6BA24727DE5000E3E84 /* NetworkManager.swift */,
+				6C99B6BC24727E69000E3E84 /* Commons.swift */,
+				6C99B6BE24727EE2000E3E84 /* RequestProtocol.swift */,
+				6C99B6C024727F06000E3E84 /* Request.swift */,
+				6C99B6C224727F2F000E3E84 /* DispatcherProtocol.swift */,
+				6C99B6C424727F83000E3E84 /* EnvironmentConfig.swift */,
+				6C99B6C624727FF3000E3E84 /* EnvironmentProtocol.swift */,
+				6C99B6C824728026000E3E84 /* WebViewManager.swift */,
+				6C99B6CA2472804B000E3E84 /* WebRequest.swift */,
+				6C99B6CC24728074000E3E84 /* GIF.swift */,
+				6C85A13F2484E36E003D433C /* ENManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6C99B6D024728968000E3E84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C99B6D12472898D000E3E84 /* Constants.swift */,
+				6C85A1412484ED29003D433C /* GridUtil.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CCE20622472AB8F002AD443 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE20652472AC9D002AD443 /* OnBoardingViewCell.swift */,
+				6CCE20632472ABCF002AD443 /* OnBoardingViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		A2EB6BDA627B66076CD53602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E80AD1FBF1AF7B0673C3EB24 /* Pods_CoCoMed.framework */,
+				9E1628342AB10A46FCDB6C45 /* Pods_CoCoMed_CoCoMedUITests.framework */,
+				25AC1EE70FE5BE3187AB6BD0 /* Pods_CoCoMedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C99B67A24727A65000E3E84 /* CoCoMed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C99B6A824727A68000E3E84 /* Build configuration list for PBXNativeTarget "CoCoMed" */;
+			buildPhases = (
+				41118A74AF734F7F5F2A6033 /* [CP] Check Pods Manifest.lock */,
+				6C99B67724727A65000E3E84 /* Sources */,
+				6C99B67824727A65000E3E84 /* Frameworks */,
+				6C99B67924727A65000E3E84 /* Resources */,
+				0A84DBDEFFDD9A4A37261DF1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoCoMed;
+			productName = CoCoMed;
+			productReference = 6C99B67B24727A65000E3E84 /* CoCoMed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C99B69324727A68000E3E84 /* CoCoMedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C99B6AB24727A68000E3E84 /* Build configuration list for PBXNativeTarget "CoCoMedTests" */;
+			buildPhases = (
+				7FB47243AFE1FE3F6C23CE94 /* [CP] Check Pods Manifest.lock */,
+				6C99B69024727A68000E3E84 /* Sources */,
+				6C99B69124727A68000E3E84 /* Frameworks */,
+				6C99B69224727A68000E3E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C99B69624727A68000E3E84 /* PBXTargetDependency */,
+			);
+			name = CoCoMedTests;
+			productName = CoCoMedTests;
+			productReference = 6C99B69424727A68000E3E84 /* CoCoMedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C99B69E24727A68000E3E84 /* CoCoMedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C99B6AE24727A68000E3E84 /* Build configuration list for PBXNativeTarget "CoCoMedUITests" */;
+			buildPhases = (
+				37759053FF87039047DD9F52 /* [CP] Check Pods Manifest.lock */,
+				6C99B69B24727A68000E3E84 /* Sources */,
+				6C99B69C24727A68000E3E84 /* Frameworks */,
+				6C99B69D24727A68000E3E84 /* Resources */,
+				F3DE78FB66D8EBD6E225D38E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C99B6A124727A68000E3E84 /* PBXTargetDependency */,
+			);
+			name = CoCoMedUITests;
+			productName = CoCoMedUITests;
+			productReference = 6C99B69F24727A68000E3E84 /* CoCoMedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C99B67324727A65000E3E84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = LifeSparkTech;
+				TargetAttributes = {
+					6C99B67A24727A65000E3E84 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					6C99B69324727A68000E3E84 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 6C99B67A24727A65000E3E84;
+					};
+					6C99B69E24727A68000E3E84 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 6C99B67A24727A65000E3E84;
+					};
+				};
+			};
+			buildConfigurationList = 6C99B67624727A65000E3E84 /* Build configuration list for PBXProject "CoCoMed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C99B67224727A65000E3E84;
+			productRefGroup = 6C99B67C24727A65000E3E84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C99B67A24727A65000E3E84 /* CoCoMed */,
+				6C99B69324727A68000E3E84 /* CoCoMedTests */,
+				6C99B69E24727A68000E3E84 /* CoCoMedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C99B67924727A65000E3E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C99B68E24727A68000E3E84 /* LaunchScreen.storyboard in Resources */,
+				6CCE20642472ABCF002AD443 /* OnBoardingViewCell.xib in Resources */,
+				6C99B68B24727A68000E3E84 /* Assets.xcassets in Resources */,
+				6C99B68624727A65000E3E84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C99B69224727A68000E3E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C99B69D24727A68000E3E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A84DBDEFFDD9A4A37261DF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoCoMed/Pods-CoCoMed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoCoMed/Pods-CoCoMed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoCoMed/Pods-CoCoMed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37759053FF87039047DD9F52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoCoMed-CoCoMedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41118A74AF734F7F5F2A6033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoCoMed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB47243AFE1FE3F6C23CE94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoCoMedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DE78FB66D8EBD6E225D38E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoCoMed-CoCoMedUITests/Pods-CoCoMed-CoCoMedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoCoMed-CoCoMedUITests/Pods-CoCoMed-CoCoMedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoCoMed-CoCoMedUITests/Pods-CoCoMed-CoCoMedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C99B67724727A65000E3E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C99B6C524727F83000E3E84 /* EnvironmentConfig.swift in Sources */,
+				6CCE20662472AC9D002AD443 /* OnBoardingViewCell.swift in Sources */,
+				6C99B6BB24727DE5000E3E84 /* NetworkManager.swift in Sources */,
+				6C85A1402484E36E003D433C /* ENManager.swift in Sources */,
+				6C99B67F24727A65000E3E84 /* AppDelegate.swift in Sources */,
+				6C99B6BD24727E69000E3E84 /* Commons.swift in Sources */,
+				6C06AEE624759012001F910D /* HomeVC.swift in Sources */,
+				6C99B6BF24727EE2000E3E84 /* RequestProtocol.swift in Sources */,
+				6C85A1422484ED29003D433C /* GridUtil.swift in Sources */,
+				6C99B6D22472898D000E3E84 /* Constants.swift in Sources */,
+				6C85A1442484FFFB003D433C /* BackgroundLocationMananger.swift in Sources */,
+				6C9436202484B1FC006263DD /* GrantPermissionsVC.swift in Sources */,
+				6C99B6C724727FF3000E3E84 /* EnvironmentProtocol.swift in Sources */,
+				6C5DFF6824766ADE00C40148 /* SymptomCheckerVC.swift in Sources */,
+				6C99B6CB2472804B000E3E84 /* WebRequest.swift in Sources */,
+				6C99B6C324727F2F000E3E84 /* DispatcherProtocol.swift in Sources */,
+				6C06AEE424758E70001F910D /* SideMenuContainerVC.swift in Sources */,
+				6C99B6C124727F06000E3E84 /* Request.swift in Sources */,
+				6C5DFF662476656400C40148 /* SymptomCheckTermsVC.swift in Sources */,
+				6C9436222484B87B006263DD /* ReachabilityManager.swift in Sources */,
+				6C99B6C924728026000E3E84 /* WebViewManager.swift in Sources */,
+				6C99B68924727A65000E3E84 /* CoCoMed.xcdatamodeld in Sources */,
+				6C99B6CD24728074000E3E84 /* GIF.swift in Sources */,
+				6C99B6CF24728328000E3E84 /* OnBoardings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C99B69024727A68000E3E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C99B69924727A68000E3E84 /* CoCoMedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C99B69B24727A68000E3E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C99B6A424727A68000E3E84 /* CoCoMedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C99B69624727A68000E3E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C99B67A24727A65000E3E84 /* CoCoMed */;
+			targetProxy = 6C99B69524727A68000E3E84 /* PBXContainerItemProxy */;
+		};
+		6C99B6A124727A68000E3E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C99B67A24727A65000E3E84 /* CoCoMed */;
+			targetProxy = 6C99B6A024727A68000E3E84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C99B68424727A65000E3E84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C99B68524727A65000E3E84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C99B68C24727A68000E3E84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C99B68D24727A68000E3E84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C99B6A624727A68000E3E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C99B6A724727A68000E3E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C99B6A924727A68000E3E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2004441D0BFF10BF0A54BA74 /* Pods-CoCoMed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QH36B4TB6;
+				INFOPLIST_FILE = CoCoMed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LifeSpark.CoCoMed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6C99B6AA24727A68000E3E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA92E4FE572E6406CF55CAC /* Pods-CoCoMed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QH36B4TB6;
+				INFOPLIST_FILE = CoCoMed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LifeSpark.CoCoMed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6C99B6AC24727A68000E3E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2708798FB650257250140324 /* Pods-CoCoMedTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QH36B4TB6;
+				INFOPLIST_FILE = CoCoMedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LifeSpark.CoCoMedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoCoMed.app/CoCoMed";
+			};
+			name = Debug;
+		};
+		6C99B6AD24727A68000E3E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04877EAF9FDC1DD6D5340A30 /* Pods-CoCoMedTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QH36B4TB6;
+				INFOPLIST_FILE = CoCoMedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LifeSpark.CoCoMedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoCoMed.app/CoCoMed";
+			};
+			name = Release;
+		};
+		6C99B6AF24727A68000E3E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4B4A207C7AE1669BCE834B /* Pods-CoCoMed-CoCoMedUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QH36B4TB6;
+				INFOPLIST_FILE = CoCoMedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LifeSpark.CoCoMedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoCoMed;
+			};
+			name = Debug;
+		};
+		6C99B6B024727A68000E3E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B330473D5841C202C7466EA3 /* Pods-CoCoMed-CoCoMedUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QH36B4TB6;
+				INFOPLIST_FILE = CoCoMedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LifeSpark.CoCoMedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoCoMed;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C99B67624727A65000E3E84 /* Build configuration list for PBXProject "CoCoMed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C99B6A624727A68000E3E84 /* Debug */,
+				6C99B6A724727A68000E3E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C99B6A824727A68000E3E84 /* Build configuration list for PBXNativeTarget "CoCoMed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C99B6A924727A68000E3E84 /* Debug */,
+				6C99B6AA24727A68000E3E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C99B6AB24727A68000E3E84 /* Build configuration list for PBXNativeTarget "CoCoMedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C99B6AC24727A68000E3E84 /* Debug */,
+				6C99B6AD24727A68000E3E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C99B6AE24727A68000E3E84 /* Build configuration list for PBXNativeTarget "CoCoMedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C99B6AF24727A68000E3E84 /* Debug */,
+				6C99B6B024727A68000E3E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6C99B68724727A65000E3E84 /* CoCoMed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C99B68824727A65000E3E84 /* CoCoMed.xcdatamodel */,
+			);
+			currentVersion = 6C99B68824727A65000E3E84 /* CoCoMed.xcdatamodel */;
+			path = CoCoMed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6C99B67324727A65000E3E84 /* Project object */;
+}
